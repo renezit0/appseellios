@@ -14,14 +14,14 @@ workflows:
         script: |
           xcodebuild \
             -workspace ios/seeLL.xcworkspace \
-            -scheme YourApp \
+            -scheme seeLL \
             -sdk iphoneos \
             -configuration Release \
-            -archivePath $HOME/Library/Developer/Xcode/Archives/YourApp.xcarchive archive
+            -archivePath $HOME/Library/Developer/Xcode/Archives/seeLL.xcarchive archive
 
           xcodebuild \
             -exportArchive \
-            -archivePath $HOME/Library/Developer/Xcode/Archives/YourApp.xcarchive \
+            -archivePath $HOME/Library/Developer/Xcode/Archives/seeLL.xcarchive \
             -exportOptionsPlist ios/exportOptions.plist \
             -exportPath build/ios/ipa
     artifacts:
