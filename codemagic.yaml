@@ -13,7 +13,7 @@ workflows:
       - name: Build IPA
         script: |
           xcodebuild \
-            -workspace ios/YourApp.xcworkspace \
+            -workspace ios/seeLL.xcworkspace \
             -scheme YourApp \
             -sdk iphoneos \
             -configuration Release \
